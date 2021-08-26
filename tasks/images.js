@@ -42,6 +42,5 @@ gulp.task('images', function () {
         ],
       }),
     ]))
-      .pipe(webp())
     .pipe(gulp.dest(paths.images.dist));
 });

@@ -19,6 +19,7 @@ gulp.task('server', function(done) {
   gulp.watch(paths.views.watch, {usePolling: true}, gulp.parallel('views'));
   gulp.watch(paths.styles.watch, {usePolling: true}, gulp.parallel('styles'));
   gulp.watch(paths.scripts.watch, {usePolling: true}, gulp.parallel('scripts'));
+  gulp.watch(paths.imagesWebp.watch, {usePolling: true}, gulp.parallel('imagesWebp'));
   gulp.watch(paths.images.watch, {usePolling: true}, gulp.parallel('images'));
   gulp.watch(paths.sprites.watch, {usePolling: true}, gulp.parallel('sprites'));
 

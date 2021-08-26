@@ -1,57 +1,57 @@
 .page-footer {
   padding: 50px 0 0 0;
   position: relative;
-  background-image: url("../img/content/bg-footer.webp");
+  background-image: url("../img/content/bg-footer.png");
   background-size: 360px 418px;
   background-position: center;
   background-repeat: no-repeat;
   min-height: 416px;
 
   @media screen and (min-resolution: 2dppx) {
-    background-image: url("../img/content/bg-footer@2x.webp");
-    background-size: image-size("../img/content/bg-footer@2x.webp");
+    background-image: url("../img/content/bg-footer@2x.png");
+    background-size: image-size("../img/content/bg-footer@2x.png");
   }
   @media screen and (min-width: $tablet-width) {
-    background-image: url("../img/content/bg-footer-tablet.webp");
+    background-image: url("../img/content/bg-footer-tablet.png");
     background-size: 399px 426px;
     background-position: left;
   }
   @media screen and (min-resolution: 2dppx) {
-    background-image: url("../img/content/bg-footer-tablet@2x.webp");
-    background-size: image-size("../img/content/bg-footer-tablet@2x.webp");
+    background-image: url("../img/content/bg-footer-tablet@2x.png");
+    background-size: image-size("../img/content/bg-footer-tablet@2x.png");
   }
   @media screen and (min-width: $tablet-width-more) {
     padding: 78px 0 0 0;
-    background-image: url("../img/content/bg-footer-tablet-more.webp");
+    background-image: url("../img/content/bg-footer-tablet-more.png");
     background-size: 519px 496px;
     background-position: 0 25px;
     min-height: 496px;
   }
   @media screen and (min-resolution: 2dppx) {
-    background-image: url("../img/content/bg-footer-tablet-more@2x.webp");
-    background-size: image-size("../img/content/bg-footer-tablet-more@2x.webp");
+    background-image: url("../img/content/bg-footer-tablet-more@2x.png");
+    background-size: image-size("../img/content/bg-footer-tablet-more@2x.png");
   }
   @media screen and (min-width: $desktop-width) {
     padding: 86px 0 0 0;
-    background-image: url("../img/content/bg-footer-desktop.webp");
+    background-image: url("../img/content/bg-footer-desktop.png");
     background-size: 733px 694px;
     background-position: 0 -52px;
     min-height: 660px;
   }
   @media screen and (min-resolution: 2dppx) {
-    background-image: url("../img/content/bg-footer-desktop@2x.webp");
-    background-size: image-size("../img/content/bg-footer-desktop@2x.webp");
+    background-image: url("../img/content/bg-footer-desktop@2x.png");
+    background-size: image-size("../img/content/bg-footer-desktop@2x.png");
   }
   @media screen and (min-width: $desktop-width-more) {
     padding: 86px 0 0 0;
-    background-image: url("../img/content/bg-footer-desktop-more.webp");
+    background-image: url("../img/content/bg-footer-desktop-more.png");
     background-size: 945px 885px;
     background-position: 5px -12px;
     min-height: 885px;
   }
   @media screen and (min-resolution: 2dppx) {
-    background-image: url("../img/content/bg-footer-desktop-more@2x.webp");
-    background-size: image-size("../img/content/bg-footer-desktop-more@2x.webp");
+    background-image: url("../img/content/bg-footer-desktop@2x.png");
+    background-size: image-size("../img/content/bg-footer-desktop@2x.png");
   }
 }
 

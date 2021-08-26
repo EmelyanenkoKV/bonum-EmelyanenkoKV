@@ -46,15 +46,25 @@ const paths = {
     dist: "./dist/assets/img/svg-sprite/",
     watch: "./src/img/svg-sprite/*.svg"
   },
-  images: {
+  imagesWebp: {
     src: [
-      './src/img/**/*.{jpg,jpeg,png,gif,tiff,svg}',
+      './src/img/webp/*.{jpg,jpeg,png,gif,tiff,svg}',
       '!./src/img/favicon/*',
       '!./src/img/svg-sprite/*',
     ],
-    dist: './dist/assets/img/',
-    watch: './src/img/**/*.{jpg,jpeg,png,gif,svg,tiff}',
+    dist: './dist/assets/img/webp',
+    watch: './src/img/webp/*.{jpg,jpeg,png,gif,svg,tiff}',
   },
+    images: {
+        src: [
+            './src/img/**/*.{jpg,jpeg,png,gif,tiff,svg}',
+            '!./src/img/favicon/*',
+            '!./src/img/svg-sprite/*',
+            '!./src/img/webp/*',
+        ],
+        dist: './dist/assets/img/',
+        watch: './src/img/**/*.{jpg,jpeg,png,gif,svg,tiff}',
+    },
   scripts: {
     src: './src/js/main.js',
     dist: './dist/assets/js/',
@@ -102,7 +112,7 @@ requireDir('./tasks/');
 // -------------------------------------
 
 gulp.task('default',
-  gulp.series(gulp.parallel('styles', 'scripts', 'images', 'fonts', 'views', 'favicons', 'sprites', 'vendors'), 'server'));
+  gulp.series(gulp.parallel('styles', 'scripts',  'images','imagesWebp', 'fonts', 'views', 'favicons', 'sprites', 'vendors'), 'server'));
 
 
 // -------------------------------------
@@ -111,6 +121,6 @@ gulp.task('default',
 
 gulp.task(
   'build',
-  gulp.series('clean', gulp.parallel('styles', 'scripts', 'images', 'fonts', 'views', 'favicons', 'sprites', 'vendors'), 'say:build'));
+  gulp.series('clean', gulp.parallel('styles', 'scripts',  'images','imagesWebp', 'fonts', 'views', 'favicons', 'sprites', 'vendors'), 'say:build'));
 
 export { paths, config };

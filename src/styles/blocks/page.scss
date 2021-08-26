@@ -1,0 +1,13 @@
+.page {
+  margin: 0;
+  height: 100%;
+  color: $black;
+  background-color: $white;
+  font-family: $font-family-base;
+  min-width: $mobile-width;
+  width: 100%;
+}
+
+.page__body {
+  margin: 0;
+}

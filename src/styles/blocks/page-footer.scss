@@ -1,0 +1,99 @@
+.page-footer {
+  padding: 50px 0 0 0;
+  position: relative;
+  background-image: url("../img/content/bg-footer.svg");
+  background-size: 360px 418px;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 416px;
+
+  @media screen and (min-width: $tablet-width) {
+    background-image: url("../img/content/bg-footer-tablet.svg");
+    background-size: 399px 426px;
+    background-position: left;
+  }
+  @media screen and (min-width: $tablet-width-more) {
+    padding: 78px 0 0 0;
+    background-image: url("../img/content/bg-footer-tablet-more.svg");
+    background-size: 519px 496px;
+    background-position: 0 25px;
+    min-height: 496px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    padding: 86px 0 0 0;
+    background-image: url("../img/content/bg-footer-desktop.svg");
+    background-size: 733px 694px;
+    background-position: 0 -52px;
+    min-height: 660px;
+  }
+  @media screen and (min-width: $desktop-width-more) {
+    padding: 86px 0 0 0;
+    background-image: url("../img/content/bg-footer-desktop-more.svg");
+    background-size: 945px 885px;
+    background-position: 5px -12px;
+    min-height: 885px;
+  }
+}
+
+.page-footer__subtitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 53px;
+  letter-spacing: 0.02em;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 44px;
+  margin-right: 10px;
+
+  @media screen and (min-width: $tablet-width) {
+    margin-right: 120px;
+  }
+  @media screen and (min-width: $tablet-width-more) {
+    font-size: 48px;
+    line-height: 60px;
+    margin-top: 83px;
+    margin-right: 130px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    font-size: 72px;
+    line-height: 91px;
+    margin-top: 98px;
+    margin-right: 210px;
+  }
+  @media screen and (min-width: $desktop-width-more) {
+    margin-top: 215px;
+    margin-right: 325px;
+  }
+}
+
+.page-footer__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 245px;
+  left: 95px;
+
+  @media screen and (min-width: $tablet-width) {
+    top: 248px;
+    left: 365px;
+  }
+  @media screen and (min-width: $tablet-width-more) {
+    top: 310px;
+    left: 459px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    top: 365px;
+    left: 698px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+  @media screen and (min-width: $desktop-width-more) {
+    top: 485px;
+    left: 940px;
+  }
+}

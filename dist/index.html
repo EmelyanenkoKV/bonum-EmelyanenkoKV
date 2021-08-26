@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bonum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preload" href="assets/fonts/CeraPro-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/CeraPro-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/CeraPro-Medium.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/CeraPro-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="assets/fonts/Montserrat-Light.woff2" as="font" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body class="page__body">
+  <header class="page-header">
+    <div class="page-header__welcome-img">
+      <picture>
+        <source type="image/webp" media="(min-width: 1921px)" srcset="assets/img/content/img-desktop-more.webp, assets/img/content/img-desktop-more@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 1440px)" srcset="assets/img/content/img-desktop.webp, assets/img/content/img-desktop@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 960px)" srcset="assets/img/content/img-tablet-more.webp, assets/img/content/img-tablet-more@2x.webp 2x">
+        <source type="image/webp" media="(min-width: 768px)" srcset="assets/img/content/img-tablet.webp, assets/img/content/img-tablet@2x.webp 2x">
+        <source type="image/webp" srcset="assets/img/content/img-mobile.webp 1x, assets/img/content/img-mobile@2x.webp 2x">
+        <source media="(min-width: 1921px)" srcset="assets/img/content/img-desktop-more.jpg, assets/img/content/img-desktop-more@2x.jpg 2x">
+        <source media="(min-width: 1440px)" srcset="assets/img/content/img-desktop.jpg, assets/img/content/img-desktop@2x.jpg 2x">
+        <source media="(min-width: 960px)" srcset="assets/img/content/img-tablet-more.jpg, assets/img/content/img-tablet-more.jpg@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="assets/img/content/img-tablet.jpg, assets/img/content/img-tablet.jpg@2x.jpg 2x">
+        <img class="page-header__img" src="assets/img/content/img-mobile.png" srcset="assets/img/content/img-mobile@2x.jpg 2x" alt="Изображение девушки">
+      </picture>
+    </div>
+    <div class="content-wrap">
+      <nav class="main-nav" aria-label="Основное меню">
+        <div class="main-nav__logo">
+          <a class="logo-brand" aria-label="Логотип бренда VIRNA" href="#">
+            <svg class="logo-brand__image" width="120" height="16">
+              <use xlink:href="assets/img/svg-sprite/sprite.svg#virna-logo"></use>
+            </svg>
+          </a>
+          <a class="header-logo" aria-label="Логотип сайта Bonum" href="index.html">
+            <svg class="header-logo__image header-logo__image--mobile" width="45" height="14">
+              <use xlink:href="assets/img/svg-sprite/sprite.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+        <h1 class="main-nav__title">Ukrainian brand</h1>
+        <p class="main-nav__title-desc">of women’s clothing</p>
+        <p class="main-nav__title-promo">
+          <span class="main-nav__promo-text">Online store</span>
+          <span class="main-nav__promo-year">2020</span>
+        </p>
+        <div class="main-nav__wrap">
+          <button class="main-nav__toggle" type="button" aria-label="Меню">
+            <span class="main-nav__span"></span>
+          </button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <button class="main-nav__button-like" type="button" aria-label="Нравится!"></button>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">
+                <svg class="main-nav__icon" width="20" height="20">
+                  <use xlink:href="assets/img/svg-sprite/sprite.svg#camera"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <div class="main-nav__cart"></div>
+            </li>
+          </ul>
+          <div class="main-nav__lang-list">
+            <select>
+              <option class="main-nav__lang-item">ru</option>
+              <option class="main-nav__lang-item">uk</option>
+              <option class="main-nav__lang-item">en</option>
+            </select>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <main class="page-main">
+    <div class="content-wrap">
+      <section class="page-main__colors colors">
+        <div class="colors__text-wrap">
+          <h2 class="colors__title">Colors</h2>
+          <p class="colors__text"> Основная деятельность заказчика такая. У него есть такие проблемы. При создании нового дизайна учитывались такие факторы - фактор1, фактор2 и фактор3. </p>
+        </div>
+        <p class="colors__color-number colors__color-number--dark">dark</p>
+        <div class="colors__palette-wrap">
+          <div class="colors__palette-wrapper">
+            <h2 class="colors__subtitle"> Color style for project </h2>
+            <p class="colors__palette-text">some text will be here</p>
+          </div>
+          <div>
+            <ul class="colors__palette-list">
+              <li class="colors__palette-item colors__palette-item--9A0034">
+                <div class="colors__color-item colors__color-item--full colors__color-item--9A0034"></div>
+                <p class="colors__color-number colors__color-number--full">#9A0034</p>
+              </li>
+              <li class="colors__palette-item colors__palette-item--E8D8D9">
+                <div class="colors__color-item colors__color-item--E8D8D9"></div>
+                <p class="colors__color-number">#E8D8D9</p>
+              </li>
+              <li class="colors__palette-item colors__palette-item--D7969E">
+                <div class="colors__color-item colors__color-item--D7969E"></div>
+                <p class="colors__color-number">#D7969E</p>
+              </li>
+              <li class="colors__palette-item colors__palette-item--DEDCDC">
+                <div class="colors__color-item colors__color-item--DEDCDC"></div>
+                <p class="visually-hidden">#DEDCDC</p>
+              </li>
+              <li class="colors__palette-item colors__palette-item--898989">
+                <div class="colors__color-item colors__color-item--898989"></div>
+                <p class="colors__color-number">#898989</p>
+              </li>
+              <li class="colors__palette-item colors__palette-item--B7B7B7">
+                <div class="colors__color-item colors__color-item--B7B7B7"></div>
+                <p class="colors__color-number">#B7B7B7</p>
+              </li>
+              <li class="colors__palette-item colors__palette-item--000">
+                <div class="colors__color-item colors__color-item--000"></div>
+                <p class="visually-hidden">#000</p>
+              </li>
+            </ul>
+            <p class="colors__color-number colors__color-number--bright">bright</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <div class="content-wrap">
+      <a class="footer-logo" aria-label="Логотип сайта Bonum" href="index.html">
+        <svg class="footer-logo__image" width="65" height="20">
+          <use xlink:href="assets/img/svg-sprite/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <h2 class="page-footer__subtitle">Thank you</h2>
+      <p class="page-footer__text">for watching</p>
+    </div>
+  </footer>
+</body>
+
+</html>

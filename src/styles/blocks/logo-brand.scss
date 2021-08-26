@@ -1,0 +1,74 @@
+.logo-brand {
+  display: none;
+  outline: none;
+
+  @media screen and (min-width: $tablet-width) {
+    width: 120px;
+    height: 16px;
+  }
+  @media screen and (min-width: $tablet-width-more) {
+    width: 100px;
+    height: 13px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    width: 120px;
+    height: 16px;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 60px;
+    left: 0;
+    height: 3px;
+    background: $bg-color-9A0034;
+    outline: none;
+    border: none;
+    width: inherit;
+  }
+
+  &:active::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 60px;
+    left: 0;
+    height: 3px;
+    background: $bg-color-D7969E;
+    outline: none;
+    border: none;
+    width: inherit;
+  }
+
+  @media screen and (min-width: $tablet-width) {
+    display: block;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $tablet-width-more) {
+    margin-bottom: 80px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    margin-bottom: 153px;
+  }
+  @media screen and (min-width: $desktop-width-more) {
+    margin-bottom: 215px;
+  }
+}
+
+.logo-brand__image {
+  @media screen and (min-width: $tablet-width) {
+    width: 120px;
+    height: 16px;
+  }
+  @media screen and (min-width: $tablet-width-more) {
+    width: 100px;
+    height: 13px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    width: 120px;
+    height: 16px;
+  }
+}

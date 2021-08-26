@@ -1,0 +1,72 @@
+.page-header {
+  width: 100%;
+  min-height: 457px;
+
+  @media screen and (min-width: $tablet-width-more) {
+    min-height: 530px;
+  }
+  @media screen and (min-width: $desktop-width-more) {
+    min-height: 457px;
+  }
+
+  &::after {
+    width: 165px;
+    height: 457px;
+    background: $bg-header;
+    backdrop-filter: blur(40px);
+    left: 0;
+    top: 0;
+    position: absolute;
+    content: "";
+
+    @media screen and (min-width: $tablet-width) {
+      width: 399px;
+    }
+    @media screen and (min-width: $tablet-width-more) {
+      width: 465px;
+      height: 530px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      width: 734px;
+      height: 802px;
+      backdrop-filter: blur(39.8649px);
+    }
+    @media screen and (min-width: $desktop-width-more) {
+      width: 855px;
+      height: 1055px;
+      backdrop-filter: blur(40px);
+    }
+  }
+
+  &::before {
+    width: 70px;
+    height: 457px;
+    background: $white;
+    right: 0;
+    top: 0;
+    position: absolute;
+    content: "";
+    z-index: 1;
+
+    @media screen and (min-width: $tablet-width) {
+      width: 129px;
+    }
+    @media screen and (min-width: $tablet-width-more) {
+      width: 225px;
+      height: 530px;
+    }
+    @media screen and (min-width: $desktop-width) {
+      width: 324px;
+      height: 802px;
+    }
+    @media screen and (min-width: $desktop-width-more) {
+      width: 465px;
+      height: 1055px;
+    }
+  }
+}
+
+.page-header__welcome-img {
+  position: absolute;
+  z-index: 0;
+}

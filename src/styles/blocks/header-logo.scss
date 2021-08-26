@@ -1,0 +1,60 @@
+.header-logo {
+  display: block;
+  margin-left: auto;
+  z-index: 10;
+  position: relative;
+  width: 45px;
+  height: 7px;
+  outline: none;
+
+  @media screen and (min-width: $tablet-width-more) {
+    width: 60px;
+    height: 15px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    width: 65px;
+    height: 20px;
+  }
+
+  &:hover::after,
+  &:focus::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 20px;
+    left: 0;
+    height: 3px;
+    background: $bg-color-9A0034;
+    outline: none;
+    border: none;
+    width: inherit;
+  }
+
+  &:active::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 20px;
+    left: 0;
+    height: 3px;
+    background: $bg-color-D7969E;
+    outline: none;
+    border: none;
+    width: inherit;
+  }
+}
+
+.header-logo__image {
+  width: 45px;
+  height: 14px;
+
+  @media screen and (min-width: $tablet-width-more) {
+    width: 60px;
+    height: 15px;
+  }
+  @media screen and (min-width: $desktop-width) {
+    width: 65px;
+    height: 20px;
+  }
+}
+

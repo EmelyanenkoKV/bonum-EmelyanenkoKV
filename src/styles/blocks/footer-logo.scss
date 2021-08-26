@@ -1,0 +1,33 @@
+.footer-logo {
+  margin-bottom: 51px;
+  width: 65px;
+  height: 10px;
+  outline: none;
+
+  &:hover::after,
+  &:focus::after  {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 100px;
+    left: 130px;
+    height: 3px;
+    background: $bg-color-9A0034;
+    outline: none;
+    border: none;
+    width: inherit;
+  }
+
+  &:active::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 100px;
+    left: 130px;
+    height: 3px;
+    background: $bg-color-D7969E;
+    outline: none;
+    border: none;
+    width: inherit;
+  }
+}

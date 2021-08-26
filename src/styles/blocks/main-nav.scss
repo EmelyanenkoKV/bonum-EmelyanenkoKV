@@ -220,6 +220,7 @@
 .main-nav__link {
   display: flex;
   outline: none;
+  border-bottom: 2px solid transparent;
 
   &:hover,
   &:focus {
